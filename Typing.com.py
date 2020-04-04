@@ -16,11 +16,10 @@ characters = lines.find_all(class_ ="letter letter--basic screenBasic-letter")
 time.sleep(1)
 keyboard = Controller()
 a = characters[2].get_text()
-print(a)
 
-keyboard.type("O")
+keyboard.type("T")
 for x in characters:
-    time.sleep(0.01)
+    time.sleep(0.001)
     if x.get_text() == a:
         keyboard.press(Key.space)
         keyboard.release(Key.space)
